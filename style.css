@@ -19,7 +19,7 @@ ul, ol{
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -29,25 +29,24 @@ img{
 
 /* Header */
 
-.navbar{
-    font-weight: bold;
-    color: white;
-    display: flex;
-    gap: 15px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
 .page-header{
     background-color: #ff6900;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
+    padding: 10px 200px;
     border-bottom: 2px solid black;
+    flex-shrink: 0;
+}
+
+.navbar{
+    font-weight: bold;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .boolean-logo{
@@ -67,17 +66,31 @@ a{
     gap: 10px;
 }
 
-.heart{
-    display: flex;
-    font-size: 35px;
-}
 
 /* Main */
+
+.headline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 0 0;
+}
+
+.subtitle{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* tabella */
 
 .col-33{
     width: calc(100% / 4);
     border: 1px solid hsl(0, 0%, 90%);
-    margin: 8px;
+    margin: 2px;
+    flex-shrink: 0;
+    justify-content: center;
 }
 
 .col-33 > p{
@@ -114,3 +127,19 @@ a{
 .brand-name{
     padding-top: 5px;
 }
+
+/* footer */
+
+/* .page-footer{
+    background-color: black;
+    padding: 10px 300px 10px 0;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-navbar{
+    font-size: 12px;
+} */
